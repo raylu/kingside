@@ -1,0 +1,26 @@
+KINGSIDE
+
+This is the kingside.net starter code. Contained within is a stripped down
+version of Donna. What's left is a barebones board representation, a position
+evaluator that just counts pieces, and a searcher that always returns the first
+valid move.
+
+GETTING STARTED
+
+You will need Go v1.3 or later (see https://golang.org/doc/install). Simply run
+`make` to build.
+
+Kingside can be used with any chess GUI software that supports UCI protocol
+(such as pychess or cutechess). You can also launch kingside as standalone
+command-line program and play against it in interactive mode: `./kingside -i`.
+
+NEXT STEPS
+
+1. `git grep TODO`. Implement an evaluator (just add up piece values) and
+searcher (negamax: https://en.wikipedia.org/wiki/Minimax). (Ignore the
+insufficient material draw todo for now.)
+2. Browse https://chessprogramming.wikispaces.com/
+3. Implement alpha-beta pruning
+4. Implement a better evaluator
+5. Implement an opening book using book.go and
+https://github.com/michaeldv/donna_opening_books
