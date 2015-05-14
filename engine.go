@@ -62,7 +62,6 @@ func (e *Engine) print(arg string) *Engine {
 	return e
 }
 
-// Dumps the string to standard output and optionally logs it to file.
 func (e *Engine) reply(args ...interface{}) *Engine {
 	if len := len(args); len > 1 {
 		data := fmt.Sprintf(args[0].(string), args[1:]...)

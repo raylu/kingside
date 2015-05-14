@@ -53,7 +53,7 @@ func (game *Game) Think() Move {
 	position := game.position()
 	rootNode = node
 
-	_, move := position.search(0, 0, 1)
+	_, move := position.search(-Checkmate, Checkmate, 1)
 	game.printBestMove(move, since(start))
 	return move
 }
