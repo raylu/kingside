@@ -1,9 +1,8 @@
 KINGSIDE
 
-This is the kingside.net starter code. Contained within is a stripped down
-version of Donna. What's left is a barebones board representation, a position
-evaluator that just counts pieces, and a searcher that always returns the first
-valid move.
+This is some chess AI starter code. Contained within is a stripped down version
+of Donna. What's left is a barebones board representation, a position evaluator
+that just counts pieces, and a searcher that always returns the first valid move.
 
 GETTING STARTED
 
